@@ -1,7 +1,6 @@
 fun main() {
  numbers(10,20,30,40)
-    var sum =(10 +20 +30 +40);
-    println (sum)
+
 
 }
 
@@ -21,11 +20,14 @@ fun statement(sentence:String){
 
 //Write and invoke a function that takes in an array of integers and returns 3 values: sum, count and average of all elements.
 
-fun numbers(num1:Int,num2:Int, num3:Int,num4:Int):Int{
-    var sum =(num1 +num2 +num3 +num4);
-    return sum;
+fun numbers(num1:Int,num2:Int, num3:Int,num4:Int){
+    var numbers: Array<Int> = arrayOf(num1, num2, num3, num4)
 
-    var average=()
+       println(numbers.sum())
+       println(numbers.count())
+       println(numbers.sum() / numbers.count())
+
+
 
 }
 
